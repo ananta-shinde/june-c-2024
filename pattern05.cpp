@@ -1,18 +1,23 @@
 // 1
-// 1 2
-// 1 2 3
-// 1 2 3 4
+// 23
+// 456
+// 78910
+
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-    int row = 4;
-    int col = 4;
+    int row=4,col=4,count = 1;
+
     for(int j=0;j<row;j++)
     {
         for(int i=0;i<col;i++)
         {
-             if(i<=j)
-             printf("%d",i+1);
+            if(i<=j)
+            {
+                printf("%d",count);
+                count++;
+            }
+            
         }
         printf("\n");
     }
