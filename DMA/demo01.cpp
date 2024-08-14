@@ -2,26 +2,26 @@
 #include<stdlib.h>
 int main(int argc, char const *argv[])
 {
-    int numbers[4];
-    // int *numbers;
-    // numbers = (int*)malloc(16);
-    // numbers = (int*)calloc(4,sizeof(int));
+    // int numbers[5]; // static allocation
+    int* numbers;
+    // numbers =(int*) malloc(40);
+    numbers =(int*) calloc(5,sizeof(int));
 
-    numbers[0] = 25;
+    numbers[0] = 100;
+    numbers[2] = 200;
+    for(int i=0;i<5;i++)
+    {
+        printf("%d\t",numbers[i]);
+    }
+     realloc(numbers,80);
+     printf("\n after reallocation\n");
 
-    realloc(numbers,25);
-
-    for(int i=0;i<3;i++)
+      for(int i=0;i<20;i++)
     {
         printf("%d\t",numbers[i]);
     }
 
     free(numbers);
-
-    for(int i=0;i<3;i++)
-    {
-        printf("%d\t",numbers[i]);
-    }
-
+    
     return 0;
 }

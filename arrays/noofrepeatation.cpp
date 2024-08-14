@@ -8,20 +8,20 @@ int main(int argc, char const *argv[])
     int num;
     printf("enter a number :");
     scanf("%d",&num);
-
     int count = 0;
-    for(int i=0;i<10;i++){
-       if( numbers[i] == num ){
+    for(int i=0;i<10;i++)
+    {
+        if(numbers[i] == num)
+        {
             count++;
-       } 
+        }
     }
-
 
     if(count == 0)
     {
-        printf("Number not found in array");
+        printf("number not found");
     }else{
-        printf("Number has occured %d times",count);
+        printf("number has occured %d times",count);
     }
 
 

@@ -4,25 +4,25 @@
 int main(int argc, char const *argv[])
 {
     int size;
-    printf("enter size of array :");
+    printf("enter no of values :");
     scanf("%d",&size);
+
     int numbers[size];
+    int sum = 0;
 
     for(int i=0;i<size;i++)
     {
-        printf("enter a number");
+        printf("enter a numner:");
         scanf("%d",&numbers[i]);
     }
+    
 
-
-    int sum = 0;
     for(int i=0;i<size;i++)
     {
-        sum = sum+numbers[i];
+         sum = sum + numbers[i];
     }
 
-    printf("Sum of numbers is : %d, avg is :%d",sum,sum/size);
-    
-   
+    printf("sum of array is :%d, avg is :%d",sum,sum/size);
+
     return 0;
 }

@@ -1,22 +1,21 @@
 #include<stdio.h>
 int main(int argc, char const *argv[])
 {
-   // declaration of array : datatype identifier[capacity]   //capacity = no of elements
-    // int numbers[5];  
-    int numbers[5] = {100,120,500,400,800}; // initialization
+    int numbers[5] = {20,25,56,45,23};// initialization
 
-   
-   // update an array
-    numbers[1] = 750;
+    // update a value in array
+    numbers[4] = 100;
 
-    printf("Enter a number:");
-    scanf("%d",&numbers[3]);
+    // read a value from
+    printf("%d\n",numbers[4]);
 
-    // print array
+    //print an array
     for(int i=0;i<5;i++)
     {
-        printf("%d\t",numbers[i]);
+         printf("%d\t",numbers[i]);
     }
+   
+
 
 
     return 0;
