@@ -50,9 +50,7 @@ class Teacher : Person{
     }
     void setName(string n){
           name = n;
-    }
-
-   
+    } 
    
 };
 
